@@ -29,9 +29,10 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`jeeves hello PERSON`](#jeeves-hello-person)
-* [`jeeves hello world`](#jeeves-hello-world)
 * [`jeeves help [COMMAND]`](#jeeves-help-command)
+* [`jeeves ip`](#jeeves-ip)
+* [`jeeves ip internet`](#jeeves-ip-internet)
+* [`jeeves joke`](#jeeves-joke)
 * [`jeeves plugins`](#jeeves-plugins)
 * [`jeeves plugins:install PLUGIN...`](#jeeves-pluginsinstall-plugin)
 * [`jeeves plugins:inspect PLUGIN...`](#jeeves-pluginsinspect-plugin)
@@ -41,46 +42,7 @@ USAGE
 * [`jeeves plugins:uninstall PLUGIN...`](#jeeves-pluginsuninstall-plugin-1)
 * [`jeeves plugins:uninstall PLUGIN...`](#jeeves-pluginsuninstall-plugin-2)
 * [`jeeves plugins update`](#jeeves-plugins-update)
-
-## `jeeves hello PERSON`
-
-Say hello
-
-```
-USAGE
-  $ jeeves hello [PERSON] -f <value>
-
-ARGUMENTS
-  PERSON  Person to say hello to
-
-FLAGS
-  -f, --from=<value>  (required) Who is saying hello
-
-DESCRIPTION
-  Say hello
-
-EXAMPLES
-  $ oex hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
-```
-
-_See code: [dist/commands/hello/index.ts](https://github.com/gchristiansen/jeeves-cli/blob/v0.1.0/dist/commands/hello/index.ts)_
-
-## `jeeves hello world`
-
-Say hello world
-
-```
-USAGE
-  $ jeeves hello world
-
-DESCRIPTION
-  Say hello world
-
-EXAMPLES
-  $ jeeves hello world
-  hello world! (./src/commands/hello/world.ts)
-```
+* [`jeeves weather`](#jeeves-weather)
 
 ## `jeeves help [COMMAND]`
 
@@ -102,6 +64,75 @@ DESCRIPTION
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.12/src/commands/help.ts)_
 
+## `jeeves ip`
+
+Provides information about your internet ip address
+
+```
+USAGE
+  $ jeeves ip
+
+DESCRIPTION
+  Provides information about your internet ip address
+
+EXAMPLES
+  Show machine ip address
+
+    $ jeeves ip
+```
+
+_See code: [dist/commands/ip/index.ts](https://github.com/gchristiansen/jeeves-cli/blob/v0.1.0/dist/commands/ip/index.ts)_
+
+## `jeeves ip internet`
+
+Provides information about your internet ip address
+
+```
+USAGE
+  $ jeeves ip internet [-d]
+
+FLAGS
+  -d, --detail
+
+DESCRIPTION
+  Provides information about your internet ip address
+
+EXAMPLES
+  Show internet ip address
+
+    $ jeeves ip internet
+
+  Show internet ip address with detail
+
+    $ jeeves ip internet -d | --detail
+```
+
+## `jeeves joke`
+
+describe the command here
+
+```
+USAGE
+  $ jeeves joke [-t]
+
+FLAGS
+  -t, --type
+
+DESCRIPTION
+  describe the command here
+
+EXAMPLES
+  Get a random joke
+
+    $ jeeves joke
+
+  Get a random joke by type
+
+    $ jeeves joke --type | -t
+```
+
+_See code: [dist/commands/joke.ts](https://github.com/gchristiansen/jeeves-cli/blob/v0.1.0/dist/commands/joke.ts)_
+
 ## `jeeves plugins`
 
 List installed plugins.
@@ -120,7 +151,7 @@ EXAMPLES
   $ jeeves plugins
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v2.0.11/src/commands/plugins/index.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v2.1.1/src/commands/plugins/index.ts)_
 
 ## `jeeves plugins:install PLUGIN...`
 
@@ -331,4 +362,51 @@ FLAGS
 DESCRIPTION
   Update installed plugins.
 ```
+
+## `jeeves weather`
+
+describe the command here
+
+```
+USAGE
+  $ jeeves weather [-c <value> | -z <value>]
+
+FLAGS
+  -c, --city=<value>
+  -z, --zip=<value>   Zip code to retrieve weather from
+
+DESCRIPTION
+  describe the command here
+
+EXAMPLES
+  Show weather based on machine location (Uses GeoIp info)
+
+    $ jeeves weather
+
+  Show weather for specified city
+
+    $ jeeves weather --city | -c
+
+  Show weather for city with multiple words - option 1 enclose in ""
+
+    $ jeeves weather --city "salt lake city"
+
+  Show weather for city with multiple words - option 2 use either "-" or "_" to separate
+
+    $ jeeves weather --city salt-lake-city
+
+  Show weather for common city name, include country code to be more specific
+
+    $ jeeves weather --city london,uk or jeeves weather --city london,us
+
+  Show weather for specified zip code
+
+    $ jeeves weather --zip | -z
+
+  Show weather for specified zip code outside US, then country code must be included
+
+    $ jeeves weather --zip 6000,ph
+```
+
+_See code: [dist/commands/weather.ts](https://github.com/gchristiansen/jeeves-cli/blob/v0.1.0/dist/commands/weather.ts)_
 <!-- commandsstop -->
