@@ -2,5 +2,16 @@
   "extends": [
     "oclif",
     "oclif-typescript"
-  ]
+  ],
+  "rules": {
+    "no-multiple-empty-lines": "off",
+    "padded-blocks": "off",
+    "no-trailing-spaces": "off",
+    "no-unused-vars": "off",
+    "no-negated-condition": "off",
+    "eqeqeq": "off",
+    "indent": "off",
+    "camelcase": "off",
+    "no-empty": "off"
+  }
 }

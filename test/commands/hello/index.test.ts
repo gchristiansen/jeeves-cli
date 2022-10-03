@@ -1,10 +1,10 @@
 import {expect, test} from '@oclif/test'
 
-describe('hello', () => {
+describe('weather', () => {
   test
   .stdout()
-  .command(['hello', 'friend', '--from=oclif'])
-  .it('runs hello cmd', ctx => {
-    expect(ctx.stdout).to.contain('hello friend from oclif!')
+  .command(['weather', 'friend', '--from=oclif'])
+  .it('runs weather cmd', ctx => {
+    expect(ctx.stdout).to.contain('weather friend from oclif!')
   })
 })
