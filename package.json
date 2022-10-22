@@ -19,7 +19,7 @@
   "dependencies": {
     "@oclif/core": "^1.16.4",
     "@oclif/plugin-help": "^5",
-    "@oclif/plugin-plugins": "^2.1.1",
+    "@oclif/plugin-plugins": "^2.1.5",
     "@types/fs-extra": "^9.0.13",
     "chalk": "^4.1.2",
     "dayjs": "^1.11.5",
