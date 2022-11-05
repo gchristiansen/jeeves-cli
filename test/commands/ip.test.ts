@@ -4,14 +4,14 @@ describe('ip', () => {
   test
   .stdout()
   .command(['ip'])
-  .it('runs weather', ctx => {
-    expect(ctx.stdout).to.contain('weather world')
+  .it('runs ip', ctx => {
+    expect(ctx.stdout).to.contain('IP Address:')
   })
 
   test
   .stdout()
-  .command(['ip', '--name', 'jeff'])
-  .it('runs weather --name jeff', ctx => {
-    expect(ctx.stdout).to.contain('weather jeff')
+  .command(['ip internet'])
+  .it('runs ip internet', ctx => {
+    expect(ctx.stdout).to.contain('Internet IP Address:')
   })
 })
