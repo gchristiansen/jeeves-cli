@@ -418,9 +418,9 @@
     supports-color "^8.1.1"
     tslib "^2"
 
-"@oclif/core@^1.0.8", "@oclif/core@^1.16.1", "@oclif/core@^1.16.4", "@oclif/core@^1.2.1", "@oclif/core@^1.20.0", "@oclif/core@^1.3.6":
-  version "1.20.3"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-1.20.3.tgz#e237b1f3d36b9fca4e8f3f91130d83ca1c12636e"
+"@oclif/core@^1.0.8", "@oclif/core@^1.16.1", "@oclif/core@^1.2.1", "@oclif/core@^1.20.0", "@oclif/core@^1.20.3", "@oclif/core@^1.20.4":
+  version "1.20.4"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-1.20.4.tgz#7378b52e1f1b502e383ffb07f95dffc9fd8588ff"
   dependencies:
     "@oclif/linewrap" "^1.0.0"
     "@oclif/screen" "^3.0.3"
@@ -447,7 +447,7 @@
     strip-ansi "^6.0.1"
     supports-color "^8.1.1"
     supports-hyperlinks "^2.2.0"
-    tslib "^2.3.1"
+    tslib "^2.4.1"
     widest-line "^3.1.0"
     wrap-ansi "^7.0.0"
 
@@ -456,10 +456,10 @@
   resolved "https://registry.npmjs.org/@oclif/linewrap/-/linewrap-1.0.0.tgz"
 
 "@oclif/plugin-help@^5", "@oclif/plugin-help@^5.1.12":
-  version "5.1.12"
-  resolved "https://registry.npmjs.org/@oclif/plugin-help/-/plugin-help-5.1.12.tgz"
+  version "5.1.19"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-5.1.19.tgz#43051772fefafe9bfe8823e2298103feb351b9c7"
   dependencies:
-    "@oclif/core" "^1.3.6"
+    "@oclif/core" "^1.20.4"
 
 "@oclif/plugin-not-found@^2.3.1":
   version "2.3.1"
@@ -502,12 +502,12 @@
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@oclif/screen/-/screen-3.0.3.tgz#e679ad10535e31d333f809f7a71335cc9aef1e55"
 
-"@oclif/test@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.npmjs.org/@oclif/test/-/test-2.1.2.tgz"
+"@oclif/test@^2.2.6":
+  version "2.2.10"
+  resolved "https://registry.yarnpkg.com/@oclif/test/-/test-2.2.10.tgz#51b873df300bb7a4d2f24a30e3395cea7db95507"
   dependencies:
-    "@oclif/core" "^1.16.4"
-    fancy-test "^2.0.0"
+    "@oclif/core" "^1.20.3"
+    fancy-test "^2.0.6"
 
 "@octokit/auth-token@^2.4.4":
   version "2.5.0"
@@ -1871,9 +1871,9 @@ external-editor@^3.0.3:
     iconv-lite "^0.4.24"
     tmp "^0.0.33"
 
-fancy-test@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/fancy-test/-/fancy-test-2.0.0.tgz"
+fancy-test@^2.0.6:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/fancy-test/-/fancy-test-2.0.7.tgz#a5e8e23113384c5550914da4f429d10822622521"
   dependencies:
     "@types/chai" "*"
     "@types/lodash" "*"
@@ -4440,9 +4440,9 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typedoc@^0.23.15:
-  version "0.23.15"
-  resolved "https://registry.npmjs.org/typedoc/-/typedoc-0.23.15.tgz"
+typedoc@^0.23.19:
+  version "0.23.21"
+  resolved "https://registry.yarnpkg.com/typedoc/-/typedoc-0.23.21.tgz#2a6b0e155f91ffa9689086706ad7e3e4bc11d241"
   dependencies:
     lunr "^2.3.9"
     marked "^4.0.19"
