@@ -408,7 +408,7 @@
     node-gyp "^8.2.0"
     read-package-json-fast "^2.0.1"
 
-"@oclif/color@^1.0.0", "@oclif/color@^1.0.1":
+"@oclif/color@^1.0.1":
   version "1.0.1"
   resolved "https://registry.npmjs.org/@oclif/color/-/color-1.0.1.tgz"
   dependencies:
@@ -418,9 +418,19 @@
     supports-color "^8.1.1"
     tslib "^2"
 
-"@oclif/core@^1.0.8", "@oclif/core@^1.16.1", "@oclif/core@^1.16.4", "@oclif/core@^1.2.1", "@oclif/core@^1.20.0", "@oclif/core@^1.3.6":
-  version "1.20.3"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-1.20.3.tgz#e237b1f3d36b9fca4e8f3f91130d83ca1c12636e"
+"@oclif/color@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@oclif/color/-/color-1.0.2.tgz#fbb857251454d737033e1dcd6d19fe5ba1d61350"
+  dependencies:
+    ansi-styles "^4.2.1"
+    chalk "^4.1.0"
+    strip-ansi "^6.0.1"
+    supports-color "^8.1.1"
+    tslib "^2"
+
+"@oclif/core@^1.20.0", "@oclif/core@^1.20.3", "@oclif/core@^1.20.4":
+  version "1.20.4"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-1.20.4.tgz#7378b52e1f1b502e383ffb07f95dffc9fd8588ff"
   dependencies:
     "@oclif/linewrap" "^1.0.0"
     "@oclif/screen" "^3.0.3"
@@ -447,7 +457,7 @@
     strip-ansi "^6.0.1"
     supports-color "^8.1.1"
     supports-hyperlinks "^2.2.0"
-    tslib "^2.3.1"
+    tslib "^2.4.1"
     widest-line "^3.1.0"
     wrap-ansi "^7.0.0"
 
@@ -455,18 +465,18 @@
   version "1.0.0"
   resolved "https://registry.npmjs.org/@oclif/linewrap/-/linewrap-1.0.0.tgz"
 
-"@oclif/plugin-help@^5", "@oclif/plugin-help@^5.1.12":
-  version "5.1.12"
-  resolved "https://registry.npmjs.org/@oclif/plugin-help/-/plugin-help-5.1.12.tgz"
+"@oclif/plugin-help@^5", "@oclif/plugin-help@^5.1.16":
+  version "5.1.19"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-5.1.19.tgz#43051772fefafe9bfe8823e2298103feb351b9c7"
   dependencies:
-    "@oclif/core" "^1.3.6"
+    "@oclif/core" "^1.20.4"
 
-"@oclif/plugin-not-found@^2.3.1":
-  version "2.3.1"
-  resolved "https://registry.npmjs.org/@oclif/plugin-not-found/-/plugin-not-found-2.3.1.tgz"
+"@oclif/plugin-not-found@^2.3.7":
+  version "2.3.9"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-not-found/-/plugin-not-found-2.3.9.tgz#045277bf04c8fd6ee25e68d5355658985c21404a"
   dependencies:
-    "@oclif/color" "^1.0.0"
-    "@oclif/core" "^1.2.1"
+    "@oclif/color" "^1.0.2"
+    "@oclif/core" "^1.20.3"
     fast-levenshtein "^3.0.0"
     lodash "^4.17.21"
 
@@ -486,28 +496,28 @@
     tslib "^2.4.1"
     yarn "^1.22.18"
 
-"@oclif/plugin-warn-if-update-available@^2.0.4":
-  version "2.0.4"
-  resolved "https://registry.npmjs.org/@oclif/plugin-warn-if-update-available/-/plugin-warn-if-update-available-2.0.4.tgz"
+"@oclif/plugin-warn-if-update-available@^2.0.14":
+  version "2.0.14"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-warn-if-update-available/-/plugin-warn-if-update-available-2.0.14.tgz#f9142095f13c5e8300705533165ae039daa0c5f8"
   dependencies:
-    "@oclif/core" "^1.0.8"
+    "@oclif/core" "^1.20.4"
     chalk "^4.1.0"
     debug "^4.1.0"
     fs-extra "^9.0.1"
     http-call "^5.2.2"
     lodash "^4.17.21"
-    semver "^7.3.2"
+    semver "^7.3.8"
 
 "@oclif/screen@^3.0.3":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@oclif/screen/-/screen-3.0.3.tgz#e679ad10535e31d333f809f7a71335cc9aef1e55"
 
-"@oclif/test@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.npmjs.org/@oclif/test/-/test-2.1.2.tgz"
+"@oclif/test@^2.2.6":
+  version "2.2.12"
+  resolved "https://registry.yarnpkg.com/@oclif/test/-/test-2.2.12.tgz#bb97a8c678b349e0e323013be67d68f619e6aaf2"
   dependencies:
-    "@oclif/core" "^1.16.4"
-    fancy-test "^2.0.0"
+    "@oclif/core" "^1.20.4"
+    fancy-test "^2.0.7"
 
 "@octokit/auth-token@^2.4.4":
   version "2.5.0"
@@ -962,9 +972,9 @@ available-typed-arrays@^1.0.5:
   version "1.0.5"
   resolved "https://registry.npmjs.org/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz"
 
-aws-sdk@^2.1116.0:
-  version "2.1195.0"
-  resolved "https://registry.npmjs.org/aws-sdk/-/aws-sdk-2.1195.0.tgz"
+aws-sdk@^2.1231.0:
+  version "2.1261.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1261.0.tgz#838657b29348feee067b887e352e488331590c1b"
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -1363,12 +1373,12 @@ concat-map@0.0.1:
   resolved "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
   integrity "sha1-2Klr13/Wjfd5OnMDajug1UBdR3s= sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg=="
 
-concurrently@^7.0.0:
-  version "7.3.0"
-  resolved "https://registry.npmjs.org/concurrently/-/concurrently-7.3.0.tgz"
+concurrently@^7.5.0:
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/concurrently/-/concurrently-7.6.0.tgz#531a6f5f30cf616f355a4afb8f8fcb2bba65a49a"
   dependencies:
     chalk "^4.1.0"
-    date-fns "^2.16.1"
+    date-fns "^2.29.1"
     lodash "^4.17.21"
     rxjs "^7.0.0"
     shell-quote "^1.7.3"
@@ -1425,9 +1435,9 @@ dargs@^7.0.0:
   version "7.0.0"
   resolved "https://registry.npmjs.org/dargs/-/dargs-7.0.0.tgz"
 
-date-fns@^2.16.1:
-  version "2.29.1"
-  resolved "https://registry.npmjs.org/date-fns/-/date-fns-2.29.1.tgz"
+date-fns@^2.29.1:
+  version "2.29.3"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.29.3.tgz#27402d2fc67eb442b511b70bbdf98e6411cd68a8"
 
 dateformat@^4.5.0:
   version "4.6.3"
@@ -1871,9 +1881,9 @@ external-editor@^3.0.3:
     iconv-lite "^0.4.24"
     tmp "^0.0.33"
 
-fancy-test@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/fancy-test/-/fancy-test-2.0.0.tgz"
+fancy-test@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/fancy-test/-/fancy-test-2.0.7.tgz#a5e8e23113384c5550914da4f429d10822622521"
   dependencies:
     "@types/chai" "*"
     "@types/lodash" "*"
@@ -3356,15 +3366,15 @@ object.assign@^4.1.2:
     object-keys "^1.1.1"
 
 oclif@^3:
-  version "3.2.2"
-  resolved "https://registry.npmjs.org/oclif/-/oclif-3.2.2.tgz"
+  version "3.2.28"
+  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.2.28.tgz#a10ea7b4bc08344a46c9fbdee7c6c16fa4d19538"
   dependencies:
-    "@oclif/core" "^1.16.1"
-    "@oclif/plugin-help" "^5.1.12"
-    "@oclif/plugin-not-found" "^2.3.1"
-    "@oclif/plugin-warn-if-update-available" "^2.0.4"
-    aws-sdk "^2.1116.0"
-    concurrently "^7.0.0"
+    "@oclif/core" "^1.20.4"
+    "@oclif/plugin-help" "^5.1.16"
+    "@oclif/plugin-not-found" "^2.3.7"
+    "@oclif/plugin-warn-if-update-available" "^2.0.14"
+    aws-sdk "^2.1231.0"
+    concurrently "^7.5.0"
     debug "^4.3.3"
     find-yarn-workspace-root "^2.0.0"
     fs-extra "^8.1"
@@ -3372,9 +3382,9 @@ oclif@^3:
     lodash "^4.17.21"
     normalize-package-data "^3.0.3"
     qqjs "^0.3.11"
-    semver "^7.3.5"
+    semver "^7.3.8"
     tslib "^2.3.1"
-    yeoman-environment "^3.9.1"
+    yeoman-environment "^3.11.1"
     yeoman-generator "^5.6.1"
     yosay "^2.0.2"
 
@@ -4440,9 +4450,9 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typedoc@^0.23.15:
-  version "0.23.15"
-  resolved "https://registry.npmjs.org/typedoc/-/typedoc-0.23.15.tgz"
+typedoc@^0.23.19:
+  version "0.23.21"
+  resolved "https://registry.yarnpkg.com/typedoc/-/typedoc-0.23.21.tgz#2a6b0e155f91ffa9689086706ad7e3e4bc11d241"
   dependencies:
     lunr "^2.3.9"
     marked "^4.0.19"
@@ -4773,9 +4783,9 @@ yarn@^1.22.18:
   version "1.22.19"
   resolved "https://registry.npmjs.org/yarn/-/yarn-1.22.19.tgz"
 
-yeoman-environment@^3.9.1:
-  version "3.10.0"
-  resolved "https://registry.npmjs.org/yeoman-environment/-/yeoman-environment-3.10.0.tgz"
+yeoman-environment@^3.11.1:
+  version "3.12.1"
+  resolved "https://registry.yarnpkg.com/yeoman-environment/-/yeoman-environment-3.12.1.tgz#20fc0ab05d76f84c956ad03ed112e3a32e65e862"
   dependencies:
     "@npmcli/arborist" "^4.0.4"
     are-we-there-yet "^2.0.0"
